@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lofi-Radio</title>
+  <link rel="shortcut icon" type="image/png" href="media/icon.png">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<!--Youtube-->
+
+<div class="absolute w-0 h-0" id="player"></div>
+
+<!--Plano de fundo em geral (REC, VHS e GIF)-->
+
+<body class="bg-cover" style="background-image:url('media/giff.gif')">
+  <img class="absolute blur-sm" src="media/bkg2.gif" alt="">
+  <img class="absolute blur-sm left-10" src="media/rec.gif" width="150">
+
+  <!--Cabeçalho-->
+
+  <div class="justify-center text-center">
+    <div class=" text-8xl font-vt323 italic justify-center text-center select-none animate-pulse">
+      <span class="relative top-5 text-pink-500 overline ">LO-FI GIRL</span>
+      <p class="text-white relative bottom-20">LO-FI GIRL</p>
+    </div>
+    <h2 class=" select-none underline decoration-pink-500 text-9xl
+     font-vt323 text-center bg-clip-text text-transparent bg-gradient-to-r from-red-500
+      to-blue-500 relative bottom-20 animate-pulse">RADIO</h2>
+  </div>
+
+  <!--Rede Social-->
+
+  <div class="relative justify-end bottom-80 flex p-10 space-x-7 ">
+    <img id="btnfc" class="cursor-pointer blur-sm transition ease-in-out hover:scale-110 hover:filter-none"
+      src="media/faceb.gif" width="70" height="70">
+    <img id="btnist" class="cursor-pointer blur-sm transition ease-in-out hover:scale-110 hover:filter-none"
+      src="media/insta.gif" width="70" height="70">
+  </div>
+
+  <!--Pausa/Play-->
+
+  <div class="relative flex items-center justify-center bottom-48 ">
+    <img id="paused" class="select-none opacity-1" src="media/pause.gif" width="250">
+  </div>
+
+  <div class="relative flex items-center justify-center bottom-44 space-x-11 ">
+    <img id="playbtn" class="cursor-pointer transition blur-sm hover:filter-none ease-in-out hover:scale-110"
+      src="media/paused.gif" width="100" height="100">
+    <img id="pausebtn" class="cursor-pointer transition blur-sm hover:filter-none ease-in-out hover:scale-110"
+      src="media/play.gif" width="130" height="130">
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
